@@ -1,1 +1,0 @@
-# Bank-Loan-Analysis-Visualization-with-POWER-BI-SQL
