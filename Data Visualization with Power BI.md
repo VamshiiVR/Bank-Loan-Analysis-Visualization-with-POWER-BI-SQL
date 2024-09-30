@@ -14,5 +14,45 @@ Transformed the CSV file using **Power Query,** showcasing my proficiency in dat
 
 **5. Average Debt-to-Income Ratio (DTI):** Evaluating the average DTI for our borrowers helps us gauge their financial health. We need to compute the average DTI for all loans, MTD, and track Month-over-Month (MoM) fluctuations.
 
-**Highlights:**
-Total Amt Recieved = SUM(financial_loan[total_payment])
+**A few DAX Measures:**
+
+`Total Amt Recieved = SUM(financial_loan[total_payment])` 
+
+`PMTD Loan Applications = CALCULATE([Total Loan Applications],DATESMTD(DATEADD(Date_Table[Date],-1,MONTH)))`
+
+`MTD avg int rate = CALCULATE(TOTALMTD([Avg interest rate],Date_Table[Date]))`
+
+`PMTD avg int rate = CALCULATE([Avg interest rate],DATESMTD(DATEADD(Date_Table[Date],-1,MONTH)))`
+
+`MTD Amt Received = CALCULATE(TOTALMTD([Total Amt Recieved],Date_Table[Date]))`
+
+`MoM Loan Applications = ([MTD Loan Applications]-[PMTD Loan Applications])/[PMTD Loan Applications]`
+
+`MoM Amt Received = ([MTD Amt Received]-[PMTD Amt Recieved])/[PMTD Amt Recieved]`
+
+`Good Loan Total Amount Recieved = CALCULATE([Total Amt Recieved],financial_loan[Good Loan vs Bad Loan]="Good Loan")`
+
+`Bad Loan % = ((CALCULATE([Total Loan Applications],financial_loan[Good Loan vs Bad Loan]="Bad Loan"))/[Total Loan Applications]) `
+
+# Bank Loan Dashboard | Summary
+
+**Good Loan v Bad Loan KPI’s**
+In order to evaluate the performance of our lending activities and assess the quality of our loan portfolio, we need to create a comprehensive report that distinguishes between 'Good Loans' and 'Bad Loans' based on specific loan status criteria
+
+**Good Loan KPIs:**
+Good Loan Application Percentage: We need to calculate the percentage of loan applications classified as 'Good Loans.' This category includes loans with a loan status of 'Fully Paid' and 'Current.'
+Good Loan Applications: Identifying the total number of loan applications falling under the 'Good Loan' category, which consists of loans with a loan status of 'Fully Paid' and 'Current.'
+Good Loan Funded Amount: Determining the total amount of funds disbursed as 'Good Loans.' This includes the principal amounts of loans with a loan status of 'Fully Paid' and 'Current.'
+Good Loan Total Received Amount: Tracking the total amount received from borrowers for 'Good Loans,' which encompasses all payments made on loans with a loan status of 'Fully Paid' and 'Current.'
+
+**Bad Loan KPIs:**
+Bad Loan Application Percentage: Calculating the percentage of loan applications categorized as 'Bad Loans.' This category specifically includes loans with a loan status of 'Charged Off.'
+Bad Loan Applications: Identifying the total number of loan applications categorized as 'Bad Loans,' which consists of loans with a loan status of 'Charged Off.'
+Bad Loan Funded Amount: Determining the total amount of funds disbursed as 'Bad Loans.' This comprises the principal amounts of loans with a loan status of 'Charged Off.'
+Bad Loan Total Received Amount: Tracking the total amount received from borrowers for 'Bad Loans,' which includes all payments made on loans with a loan status of 'Charged Off.'
+
+**Loan Status Grid View**
+In order to gain a comprehensive overview of our lending operations and monitor the performance of loans, we aim to create a grid view report categorized by 'Loan Status.' This report will serve as a valuable tool for analysing and understanding the key indicators associated with different loan statuses. By providing insights into metrics such as 'Total Loan Applications,' 'Total Funded Amount,' 'Total Amount Received,' 'Month-to-Date (MTD) Funded Amount,' 'MTD Amount Received,' 'Average Interest Rate,' and 'Average Debt-to-Income Ratio (DTI),' this grid view will empower us to make data-driven decisions and assess the health of our loan portfolio.
+
+
+
