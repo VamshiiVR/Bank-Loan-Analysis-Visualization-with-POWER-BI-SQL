@@ -22,17 +22,17 @@ The report will serve as a consolidated hub for **all critical loan parameters, 
 
 Here are details of the columns from your CSV file:
 
-**id:** A unique identifier for each loan application or customer.
+**id:** A  unique identifier assigned to each loan application or loan account. It serves as a primary key for tracking and managing individual loans.
 
-**address_state:** The state where the applicant resides.
+**address_state:** indicates the borrower's location. It helps in assessing regional risk factors, compliance with state regulations, and estimating default probabilities.
 
 **application_type:** Specifies whether the loan is individual or joint.
 
-**emp_length:** Length of employment of the applicant (e.g., 10+ years, 2 years, etc.).
+**emp_length:** Provides insights into the borrower's employment stability. Longer employment durations may indicate greater job security.
 
-**emp_title:** The job title of the applicant.
+**emp_title:** Specifies the borrower's occupation or job title. It helps lenders understand the source of the borrower's income.
 
-**grade:** Loan grade (typically represents the risk level of the loan).
+**grade:** Grade represents a risk classification assigned to the loan based on creditworthiness. Higher grades signify lower risk.
 
 **home_ownership:** Homeownership status of the applicant (e.g., rent, own, mortgage).
 
@@ -50,7 +50,7 @@ Here are details of the columns from your CSV file:
 
 **purpose:** The reason or purpose for taking out the loan (e.g., debt consolidation, home improvement).
 
-**sub_grade:** A more specific loan risk category within the main grade.
+**sub_grade:** Refines the risk assessment within a grade, providing additional risk differentiation.
 
 **term:** Loan term in months (e.g., 36 months, 60 months).
 
@@ -68,4 +68,4 @@ Here are details of the columns from your CSV file:
 
 **total_acc:** Total number of credit accounts held by the applicant.
 
-total_payment: The total amount of payments made toward the loan.
+**total_payment:** The total amount of payments made toward the loan.
