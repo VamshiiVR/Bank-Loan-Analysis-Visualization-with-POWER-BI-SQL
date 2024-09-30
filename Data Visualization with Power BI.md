@@ -36,9 +36,9 @@ Transformed the CSV file using **Power Query,** showcasing my proficiency in dat
 
 # Bank Loan Dashboard | Summary
 
+![Screenshot 2024-09-30 152904](https://github.com/user-attachments/assets/967dad66-5000-4d07-8460-2ca8acdb27cf)
 
-
-**Good Loan v Bad Loan KPI’s**
+**Good Loan v Bad Loan KPI’s:**
 In order to evaluate the performance of our lending activities and assess the quality of our loan portfolio, we need to create a comprehensive report that distinguishes between 'Good Loans' and 'Bad Loans' based on specific loan status criteria
 
 **Good Loan KPIs:**
@@ -63,6 +63,33 @@ Bad Loan Total Received Amount: Tracking the total amount received from borrower
 
 **Loan Status Grid View**
 In order to gain a comprehensive overview of our lending operations and monitor the performance of loans, we aim to create a grid view report categorized by 'Loan Status.' This report will serve as a valuable tool for analysing and understanding the key indicators associated with different loan statuses. By providing insights into metrics such as 'Total Loan Applications,' 'Total Funded Amount,' 'Total Amount Received,' 'Month-to-Date (MTD) Funded Amount,' 'MTD Amount Received,' 'Average Interest Rate,' and 'Average Debt-to-Income Ratio (DTI),' this grid view will empower us to make data-driven decisions and assess the health of our loan portfolio.
+
+# Bank Loan Dashboard | Overview
+
+![Screenshot 2024-09-30 211916](https://github.com/user-attachments/assets/6072b07c-9a04-4f03-bbfc-d0d966f149b8)
+
+In our Bank Loan Report project, we aim to visually represent critical loan-related metrics and trends using a variety of chart types. These charts will provide a clear and insightful view of our lending operations, facilitating data-driven decision-making and enabling us to gain valuable insights into various loan parameters. The diverse chart types will enhance our ability to visualize and communicate loan-related insights effectively, supporting data-driven decisions and strategic planning within our lending operations. Below are the specific chart requirements:
+
+**Monthly Trends by Issue Date (Line Chart):** This line chart will showcase how 'Total Loan Applications,' 'Total Funded Amount,' and 'Total Amount Received' vary over time, allowing us to identify seasonality and long-term trends in lending activities.
+
+**Regional Analysis by State (Filled Map):** This filled map will visually represent lending metrics categorized by state, enabling us to identify regions with significant lending activity and assess regional disparities.
+
+**Loan Term Analysis (Donut Chart):** This donut chart will depict loan statistics based on different loan terms, allowing us to understand the distribution of loans across various term lengths.
+
+**Employee Length Analysis (Bar Chart):** This bar chart will illustrate how lending metrics are distributed among borrowers with different employment lengths, helping us assess the impact of employment history on loan applications.
+
+**Loan Purpose Breakdown (Bar Chart):** This bar chart will provide a visual breakdown of loan metrics based on the stated purposes of loans, aiding in the understanding of the primary reasons borrowers seek financing.
+
+**Home Ownership Analysis (Tree Map):** This tree map will display loan metrics categorized by different home ownership statuses, allowing for a hierarchical view of how home ownership impacts loan applications and disbursements.
+
+# Bank Loan Dashboard | Details
+
+![image](https://github.com/user-attachments/assets/b311ce29-ebbb-4d43-a9e0-2cff25660832)
+
+The primary objective of the Details Dashboard using the **table visual** is to provide a comprehensive and user-friendly interface for accessing vital loan data. It will serve as a one-stop solution for users seeking detailed insights into our loan portfolio, borrower profiles, and loan performance.
+ 
+
+
 
 
 
